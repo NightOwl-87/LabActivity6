@@ -1,0 +1,256 @@
+/* Authentication layout */
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #f1f5f9;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-header h1 {
+    font-size: 27px;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.auth-header p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.form-group input {
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+}
+
+.form-group small {
+    margin-top: 6px;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.auth-button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.auth-button:hover {
+    background: #1d4ed8;
+}
+
+.auth-button:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+}
+
+.error-message {
+    padding: 11px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    background: #fee2e2;
+    color: #b91c1c;
+    font-size: 13px;
+}
+
+.success-message {
+    padding: 11px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    background: #dcfce7;
+    color: #15803d;
+    font-size: 13px;
+}
+
+.auth-footer {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.auth-footer a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Students Dashboard */
+.students-container {
+    min-height: 100vh;
+    background: #f1f5f9;
+    padding: 30px;
+}
+
+.students-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto 35px;
+}
+
+.students-header h1 {
+    color: #1e293b;
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+.students-header p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.logout-button {
+    padding: 11px 20px;
+    background: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background: #b91c1c;
+}
+
+.students-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 28px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.students-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.students-title h2 {
+    font-size: 21px;
+    color: #1e293b;
+}
+
+.students-title span {
+    padding: 7px 12px;
+    background: #dbeafe;
+    color: #1d4ed8;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.students-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.students-table th,
+.students-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 14px;
+}
+
+.students-table th {
+    background: #f8fafc;
+    color: #475569;
+    font-weight: 600;
+}
+
+.students-table td {
+    color: #334155;
+}
+
+.students-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+.loading-message,
+.empty-message {
+    text-align: center;
+    padding: 30px;
+    color: #64748b;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .students-container {
+        padding: 15px;
+    }
+
+    .students-header {
+        gap: 15px;
+    }
+
+    .students-header h1 {
+        font-size: 22px;
+    }
+
+    .students-content {
+        padding: 18px;
+    }
+
+    .students-title h2 {
+        font-size: 18px;
+    }
+}
